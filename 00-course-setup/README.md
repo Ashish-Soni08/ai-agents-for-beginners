@@ -47,22 +47,19 @@ This will copy the example file and create a `.env` in your directory.
 
 Open that file and paste the token you created into the `GITHUB_TOKEN=` field of the .env file. 
 
-## Install Required Packages
-
-To ensure you have all the required Python packages for to run the code, run the following command into your terminal.
-
-We reccomend creating a Python virtual environment to avoid any conflicts and issues.
+## Environment Setup
 
 ```bash
-pip install -r requirements.txt
+python -V
+# Output(Python Version) -> Python 3.12.1
 ```
 
-This should install the required Python packages. 
+```bash
+# create a virtual environment
+python -m venv ai-agents
+```
 
-You are now ready to run the code of this code, happy learning more about the world of AI Agents!
-
-If you have any issue running this setup, hope into our [Azure AI Community Discord](https://discord.gg/kzRShWzttr) or [create an issue](https://github.com/microsoft/ai-agents-for-beginners/issues?WT.mc_id=academic-105485-koreyst).
-
-
-
-
+```bash
+# Install the required Python packages.
+pip install -r requirements.txt
+```
